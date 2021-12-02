@@ -152,7 +152,7 @@ def update_manifests_images(apps, tag):
             for image in images:
                 if image["name"] == target_image["name"]:
                     image["newName"] = target_image["newName"]
-                    image["newTag"] = tag
+                    image["newTag"] = "v1.4.0"
                     found = True
                     break
             if not found:
